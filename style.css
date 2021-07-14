@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.contain{
+	height: 100vh;
+	position: relative;
+}
+
+.game-container{
+	width: 500px;
+	height: 200px;
+	
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	overflow: hidden;
+}
+
+.hero{
+	height: 50px;
+	width: 20px;
+	background-color: red;
+	position: absolute;
+	top: 150px;
+	left: 0;
+	z-index: 100;
+}
+
+.heroAnimation{
+	-webkit-animation: heroA 500ms infinite ;
+	animation: heroA 500ms  ;
+}
+
+@-webkit-keyframes heroA{
+	0%{
+		top: 150px;
+	}
+	
+	30%{
+		top: 100px;
+	}
+	
+	70%{
+		top: 100px;
+	}
+	
+	100%{
+		top: 150px;
+	}
+}
+
+@keyframes heroA{
+	0%{
+		top: 150px;
+	}
+	
+	30%{
+		top: 100px;
+	}
+	
+	70%{
+		top: 100px;
+	}
+	
+	100%{
+		top: 150px;
+	}
+}
+
+.hurdle{
+	height: 20px;
+	width: 20px;
+	background-color: blue;
+	position: relative;
+	top: 180px;
+	left: 480px;
+	-webkit-animation: hurdleA 1s infinite linear;
+	animation: hurdleA 1s infinite linear;
+}
+
+
+@-webkit-keyframes hurdleA{
+	0%{
+		left: 480px;
+	}
+	
+	100%{
+		left: -40px;
+	}
+}
+
+
+@keyframes hurdleA{
+	0%{
+		left: 480px;
+	}
+	
+	100%{
+		left: -40px;
+	}
+}
+
+
+
+
